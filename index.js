@@ -1,4 +1,4 @@
-const API_TOKEN = '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';
+const API_TOKEN = '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';
 const age = document.querySelector('#age-value');
 const private_repos = document.querySelector('#private-repos-value');
 const public_repos = document.querySelector('#public-repos-value');
