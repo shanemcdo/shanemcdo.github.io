@@ -41,6 +41,7 @@ body{
 a.site-link{
     color: inherit;
     font-weight: 200;
+    outline: none !important;
 }
 
 a.site-link:hover{
