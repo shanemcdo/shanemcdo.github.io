@@ -1,24 +1,40 @@
+:root{
+    --bg: #111;
+    --fg: #ddd;
+    --accent-dark: darkorchid;
+    --accent-med: mediumorchid;
+    --accent-light: #e6a8d7;
+    --font: 'Ubuntu', sans-serif;
+}
 html, body{
     padding: 0;
     margin: 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--font);
 }
 
 body{
-    background: #111;
+    background: var(--bg);
     padding: 20px;
-    color: #ddd;
+    color: var(--fg);
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
 #title{
-    color: darkorchid;
+    background-color: var(--accent-dark);
     text-align: center;
     font-size: 2.7em;
     font-weight: 800;
     margin-top: 0;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.breakout{
+    color: black;
+    mix-blend-mode: screen;
 }
 
 .link{
@@ -27,24 +43,32 @@ body{
 
 .intro-link{
     font-weight: 600;
-    color: mediumorchid;
+    color: var(--accent-med);
 }
 
 .intro-link:hover{
-    color: #e6a8d7;
+    color: var(--accent-light);
 }
 
 #sites-header{
     text-align: center;
-    color: mediumorchid;
+    color: var(--accent-med);
+}
+
+#site-list{
+    padding-right: 15px;
 }
 
 a.site-link{
     color: inherit;
     font-weight: 200;
     outline: none !important;
+    display: block;
+    width: 100%;
+    transition: transform 300ms ease;
 }
 
 a.site-link:hover{
-    color: mediumorchid;
+    color: var(--accent-light);
+    transform: translateX(10px);
 }
