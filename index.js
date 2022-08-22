@@ -9,7 +9,6 @@ setInterval(()=>{
 }, 50);
 
 fetch('https://api.github.com/users/kermitpurple').then(res=>res.json()).then(res=>{
-    console.log(res);
     let creation_date = new Date(res.created_at);
     public_repos.innerHTML = res.public_repos;
     setInterval(()=>{
