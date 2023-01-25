@@ -9,15 +9,18 @@
         <script src="index.js" defer></script>
     </head>
     <body>
-        <h1 id=title class="breakout">Shane McDonough</h1>
+        <div id=title-container>
+            <h1 id=title class="breakout">Shane McDonough</h1>
+        </div>
         <p id=intro>
         I am a <span id=age-value></span> year old developer.
         My GitHub is <a class="intro-link link" id=github-link href="https://github.com/kermitpurple">KermitPurple</a>.
         I have <span id=public-repos-value></span> public repositories.
         I have been on github for <span id=github-age-value></span> years.
         </p>
-        <div id="sites">
-            <h2 id=sites-header>Sites</h2>
+        <div id="cols">
+        <div class="col flex-center" id="sites">
+            <h2 class=sub-header>Sites</h2>
             <ul id=site-list>
                 <li class=site-link><a href="/" class="site-link link">This landing page</a></li>
                 <li class=site-link><a href="/coderain/" class="site-link link">Matrix Rain</a></li>
@@ -79,6 +82,17 @@
                 <li class=site-link><a href="/circular_paths/" class="site-link link">Circular Paths</a></li>
                 <li class=site-link><a href="/since/" class="site-link link">Since</a></li>
             </ul>
+        </div>
+            <div class="col flex-center" id="cards">
+                <h2 class=sub-header>Favorites</h2>
+                <a class=link href="/tetrjs/"><div class="flex-center card">
+                    <h3>TetrJS</h3>
+                    <img src="assets/tetrjs.jpg" alt="Tetrjs Gameplay"/>
+                    <p>TetrJS is my fourth Tetris clone that I've wrote.
+                    This time I wrote it using vanilla javascript
+                    and used DOM manipulation to display the board</p>
+                </div></a>
+            </div>
         </div>
     </body>
 </html>
