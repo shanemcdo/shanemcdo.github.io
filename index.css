@@ -28,16 +28,15 @@ body{
 #title-container {
     text-align: center;
     display: block;
-    white-space: nowrap;
     padding: 0.5em 0;
 }
 
 #title{
-    display: inline;
+    display: inline-block;
     background-color: var(--accent-dark);
     font-size: 2.7em;
     font-weight: 800;
-    margin-top: 0;
+    margin: 0;
     position: relative;
     padding: 10px;
     border-radius: 10px;
