@@ -1,5 +1,6 @@
 :root{
-    --bg: linear-gradient(-45deg, rgba(15,0,35,1) 15%, rgba(36,0,55,1) 85%);
+    --dir: -45deg;
+    --bg: linear-gradient(var(--dir), rgba(15,0,35,1) 15%, rgba(36,0,55,1) 85%);
     --fg: #ddd;
     --accent-dark: darkorchid;
     --accent-med: mediumorchid;
@@ -109,6 +110,10 @@ a.site-link:hover{
 }
 
 @media screen and (max-width: 600px) {
+    :root {
+        --dir: to bottom;
+    }
+
     #cols {
         grid-template-columns: 1fr;
     }
