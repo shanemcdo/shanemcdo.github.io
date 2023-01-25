@@ -1,5 +1,5 @@
 :root{
-    --bg: #111;
+    --bg: linear-gradient(-45deg, rgba(15,0,35,1) 15%, rgba(36,0,55,1) 85%);
     --fg: #ddd;
     --accent-dark: darkorchid;
     --accent-med: mediumorchid;
