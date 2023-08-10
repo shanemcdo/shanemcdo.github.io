@@ -8,7 +8,7 @@ setInterval(()=>{
     age.innerHTML = ((now - birth) / (1000 * 60 * 60 * 24 * 365.2425)).toFixed(9);
 }, 50);
 
-fetch('https://api.github.com/users/kermitpurple').then(res=>res.json()).then(res=>{
+fetch('https://api.github.com/users/shanemcdo').then(res=>res.json()).then(res=>{
     let creation_date = new Date(res.created_at);
     public_repos.innerHTML = res.public_repos;
     setInterval(()=>{
