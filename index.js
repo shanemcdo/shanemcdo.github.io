@@ -18,7 +18,7 @@ fetch('https://api.github.com/users/shanemcdo').then(res=>res.json()).then(res=>
     }, 50);
 });
 
-link_search.addEventListener('change', ()=>{
+link_search.addEventListener('keyup', ()=>{
     if(link_search.value === ''){
         for (const link of site_links) {
             link.style.display = '';
