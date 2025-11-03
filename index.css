@@ -1,6 +1,10 @@
 :root{
-    --dir: -45deg;
-    --bg: linear-gradient(var(--dir), #10002b 15%, #240046 85%);
+    --bg-color-dark: #10002b;
+    --bg-color-light: #3c096c;
+    --bg: radial-gradient(
+    var(--bg-color-light) ,
+    var(--bg-color-dark) 70%
+    );
     --fg: #ddd;
     --accent-dark: #7b2cbf;
     --accent-med: #9d4edd;
@@ -15,7 +19,8 @@ html, body{
 }
 
 body{
-    background: var(--bg);
+    background: var(--bg-color-dark);
+    background-image: var(--bg);
     padding: 20px;
     color: var(--fg);
 }
@@ -114,10 +119,6 @@ a.site-link:hover{
 }
 
 @media screen and (max-width: 600px) {
-    :root {
-        --dir: to bottom;
-    }
-
     #cols {
         grid-template-columns: 1fr;
     }
