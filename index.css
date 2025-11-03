@@ -2,8 +2,8 @@
     --dir: -45deg;
     --bg: linear-gradient(var(--dir), #10002b 15%, #240046 85%);
     --fg: #ddd;
-    --accent-dark: #5a189a;
-    --accent-med: #7b2cbf;
+    --accent-dark: #7b2cbf;
+    --accent-med: #9d4edd;
     --accent-light: #e0aaff;
     --font: 'Ubuntu', sans-serif;
 }
