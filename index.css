@@ -1,10 +1,10 @@
 :root{
     --dir: -45deg;
-    --bg: linear-gradient(var(--dir), rgba(15,0,35,1) 15%, rgba(36,0,55,1) 85%);
+    --bg: linear-gradient(var(--dir), #10002b 15%, #240046 85%);
     --fg: #ddd;
-    --accent-dark: darkorchid;
-    --accent-med: mediumorchid;
-    --accent-light: #e6a8d7;
+    --accent-dark: #5a189a;
+    --accent-med: #7b2cbf;
+    --accent-light: #e0aaff;
     --font: 'Ubuntu', sans-serif;
 }
 
